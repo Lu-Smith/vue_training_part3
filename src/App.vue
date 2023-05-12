@@ -3,9 +3,9 @@
   <br />
   <input type="text" ref="name" />
   <button @click="handleClick">click me</button>
-    <br />
+  <br />
   <div v-if="showModal">
-     <Modal :header="header" :text="text" :count="count" theme="sale" />
+     <Modal :header="header" :text="text" :count="count" theme="sale" @close="toggleModal"/>
   </div>
   <button @click="toggleModal">open modal</button>
   <Modal :header="header" :text="text" :count="count" theme="normal" />
