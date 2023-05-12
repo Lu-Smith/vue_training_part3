@@ -49,10 +49,11 @@ export default ({
     top: 50%;
     background: white;
     width: 80%;
-    height: 40%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     left: 10%;
 }
+
 </style>

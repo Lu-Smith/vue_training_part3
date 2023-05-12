@@ -17,12 +17,12 @@ h1 {
 h2 {
     color: rgb(89, 156, 156);
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 p {
     font-style: italic;
-    margin-bottom: 20px;
+    margin: 20px 0 40px;
 }
 
 button {
@@ -36,4 +36,12 @@ button {
 input {
     padding: 10px 15px;
     background-color: rgb(205, 240, 205);
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(236, 133, 236);
+    padding: 10px 15px;
+    margin: 10px 10px;
+    color: #333;
 }

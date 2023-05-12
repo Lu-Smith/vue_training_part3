@@ -14,7 +14,6 @@
   <Modal theme="normal">
     <template v-slot:links>
       <a href="#">sign up now</a>
-      <br />
       <a href="#">more info</a>
     </template>
       <h1>Hello World</h1>
