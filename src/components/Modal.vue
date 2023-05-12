@@ -1,15 +1,16 @@
 <template>
-    <div class="backdrop">
-        <div class="modal">
+    <div class="backdrop" :class="{normal: theme === 'normal'}">
+        <div class="modal" :class="{ sale: theme === 'sale'}" >
             <h2>{{header}}</h2>
             <p>{{text}}</p>
+            <div>{{count[0]}}</div>
         </div>
     </div>
 </template>
 
 <script>
 export default ({
-    props: ['header', 'text'],
+    props: ['header', 'text', 'count', 'theme'],
 })
 </script>
 
@@ -17,8 +18,6 @@ export default ({
 .modal {
     width: 540px;
     padding: 20px;
-    margin: 100px auto;
-    background: #fff;
     border-radius: 10px;
 }
 
@@ -30,4 +29,24 @@ export default ({
     height: 100%;
 }
 
+.sale {
+    background: crimson;
+    color: white;
+    margin: 100px auto;
+}
+
+.sale h2 {
+    color: white;
+}
+
+.normal {
+    top: 30%;
+    background: white;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 10%;
+}
 </style>
