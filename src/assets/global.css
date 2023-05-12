@@ -45,18 +45,19 @@ input {
 
 a {
     text-decoration: none;
-    background-color: rgb(236, 133, 236);
+    background-color: none;
+    border: 2px solid #fff;
     padding: 10px 15px;
     margin: 10px 10px;
-    color: #333;
+    color: #e6dcdc;
     transition: 200ms all ease-in-out;
 }
 
 a:hover {
     text-decoration: none;
-    background-color: rgb(243, 191, 243);
+    background-color: rgb(243, 191, 213);
     padding: 10px 15px;
     margin: 10px 10px;
-    color: #0e0d0d;
+    color: #971313;
     border-radius: 5px;
 }

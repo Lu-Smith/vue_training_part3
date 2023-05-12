@@ -6,19 +6,16 @@
   <br />
   <div v-if="showModal">
     <Modal theme="sale" @close="toggleModal">
+      <template v-slot:links>
+      <a href="#">sign up now</a>
+      <a href="#">more info</a>
+    </template>
       <h1>Ninja givaway</h1>
       <p>Grab your ninja swag for half price!</p>
     </Modal>
   </div>
   <button @click.alt="toggleModal">open modal (alt)</button>
-  <Modal theme="normal">
-    <template v-slot:links>
-      <a href="#">sign up now</a>
-      <a href="#">more info</a>
-    </template>
-      <h1>Hello World</h1>
-      <p>I hope you are having a wonderful day 🙂</p>
-  </Modal>
+
 </template>
 
 <script>
