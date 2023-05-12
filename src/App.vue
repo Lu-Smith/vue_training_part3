@@ -5,10 +5,16 @@
   <button @click="handleClick">click me</button>
   <br />
   <div v-if="showModal">
-     <Modal :header="header" :text="text" :count="count" theme="sale" @close="toggleModal"/>
+    <Modal theme="sale" @close="toggleModal">
+      <h1>Ninja givaway</h1>
+      <p>Grab your ninja swag for half price!</p>
+    </Modal>
   </div>
   <button @click.alt="toggleModal">open modal (alt)</button>
-  <Modal :header="header" :text="text" :count="count" theme="normal" />
+  <Modal theme="normal">
+      <h1>Hello World</h1>
+      <p>I hope you are having a wonderful day 🙂</p>
+  </Modal>
 </template>
 
 <script>
@@ -22,9 +28,6 @@ export default {
   data() {
     return {
       title: 'Training Vue App 🙂',
-      header:"Sign up for the Giveaway!",
-      text: "Grab everything for half of price.",
-      count: [1, 2, 3, '...'],
       showModal: false
     }
   },
