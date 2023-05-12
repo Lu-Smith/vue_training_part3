@@ -1,6 +1,6 @@
 <template>
     <div class="backdrop" @click.self="closeModal"> 
-        <div class="modal" :class="{ sale: theme === 'sale'}" >
+        <div class="modal" :class="{ sale: theme === 'sale', normal: theme === 'normal'}" >
             <slot>default content</slot>
             <div class="actions">
                 <slot name="links"></slot>
@@ -23,8 +23,10 @@ export default ({
 <style scoped>
 .modal {
     width: 540px;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .backdrop {
@@ -38,7 +40,6 @@ export default ({
 .sale {
     background: crimson;
     color: white;
-    margin: 300px auto;
 }
 
 .sale h2 {
@@ -46,14 +47,8 @@ export default ({
 }
 
 .normal {
-    top: 50%;
-    background: white;
-    width: 80%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 10%;
+    background: rgb(37, 4, 65);
+    color: rgb(216, 238, 252);
 }
 
 </style>

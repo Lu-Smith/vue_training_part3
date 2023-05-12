@@ -14,7 +14,19 @@
       <p>Grab your ninja swag for half price!</p>
     </Modal>
   </div>
+  <div>
+    <Modal theme="normal" v-if="showModalTwo" @close="toggleModalTwo">
+      <template v-slot:links>
+      <a href="#">sign up now</a>
+      <a href="#">more info</a>
+    </template>
+      <h1>Hello World</h1>
+      <p>I hope you are having a wonderful day 🙂</p>
+    </Modal>
+  </div>
   <button @click.alt="toggleModal">open modal (alt)</button>
+  <br />
+  <button @click.shift="toggleModalTwo">open modal (shift)</button>
 
 </template>
 
@@ -29,7 +41,8 @@ export default {
   data() {
     return {
       title: 'Training Vue App 🙂',
-      showModal: false
+      showModal: false,
+      showModalTwo: false
     }
   },
   methods: {
@@ -39,6 +52,9 @@ export default {
     },
     toggleModal() {
       this.showModal = !this.showModal
+    },
+    toggleModalTwo() {
+      this.showModalTwo = !this.showModalTwo
     }
   }
 }
