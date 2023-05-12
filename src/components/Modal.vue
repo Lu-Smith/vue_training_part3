@@ -23,8 +23,4 @@
     height: 100%;
 }
 
-h2 {
-    color: rgb(89, 156, 156);
-    font-size: 30px;
-}
 </style>

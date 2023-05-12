@@ -36,11 +36,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  background-color: #fff;
 }
 
-h1 {
-  border-bottom: 1px solid #ddd;
-  display: inline-block;
-  padding-bottom: 10px;
-}
+
 </style>
