@@ -32,7 +32,7 @@ export default ({
 .sale {
     background: crimson;
     color: white;
-    margin: 100px auto;
+    margin: 300px auto;
 }
 
 .sale h2 {
@@ -40,7 +40,7 @@ export default ({
 }
 
 .normal {
-    top: 30%;
+    top: 50%;
     background: white;
     width: 80%;
     height: 40%;
