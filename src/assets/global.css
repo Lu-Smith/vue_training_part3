@@ -33,6 +33,11 @@ button {
     border: 2px solid green;;
 }
 
+button:hover {
+    background-color: rgb(16, 177, 16);
+    border-radius: 5px;
+}
+
 input {
     padding: 10px 15px;
     background-color: rgb(205, 240, 205);
@@ -44,4 +49,14 @@ a {
     padding: 10px 15px;
     margin: 10px 10px;
     color: #333;
+    transition: 200ms all ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: rgb(243, 191, 243);
+    padding: 10px 15px;
+    margin: 10px 10px;
+    color: #0e0d0d;
+    border-radius: 5px;
 }
