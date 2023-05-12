@@ -17,4 +17,9 @@ h1 {
 h2 {
     color: rgb(89, 156, 156);
     font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-style: italic;
 }
