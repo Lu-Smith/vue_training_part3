@@ -1,11 +1,18 @@
 <template>
     <div class="backdrop">
         <div class="modal">
-            <h2>Modal Title</h2>
+            <h2>{{header}}</h2>
             <p>modal content</p>
         </div>
     </div>
 </template>
+
+<script>
+export default ({
+    props: ['header'],
+})
+</script>
+
 <style scoped>
 .modal {
     width: 400px;
